@@ -1,2 +1,2 @@
 # EMAT-Binder
-Share EMAT work with clients
+This repository will be used to visualize EMAT results
