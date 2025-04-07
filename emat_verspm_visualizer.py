@@ -129,7 +129,7 @@ class VERSPMModel(FilesCoreModel):
 		# )
 
 		# Ensuring R Exe path is in env.
-		os.environ['path'] = join_norm(self.config['r_executable'])+';'+os.environ['path']
+		# os.environ['path'] = join_norm(self.config['r_executable'])+';'+os.environ['path']
 
 		# Ensure that R paths are set correctly.
 		r_lib = self.config['r_library_path']
@@ -288,7 +288,7 @@ class VERSPMModel(FilesCoreModel):
 		super().setup(params)
 
 		# Set R environment path to run R and use visioneval to install model
-		os.environ['path'] = join_norm(self.config['r_executable'])+';'+os.environ['path']
+		# os.environ['path'] = join_norm(self.config['r_executable'])+';'+os.environ['path']
 
 		# Check if we are using distributed multi-processing. If so,
 		# we'll need to copy some files into a local working directory,
@@ -749,7 +749,7 @@ class VERSPMModel(FilesCoreModel):
 		"""
 		_logger.info("VERSPM RUN ...")
 
-		os.environ['path'] = join_norm(self.config['r_executable'])+';'+os.environ['path']
+		# os.environ['path'] = join_norm(self.config['r_executable'])+';'+os.environ['path']
 		
 		cmd = 'Rscript'
 
@@ -898,7 +898,7 @@ class VERSPMModel(FilesCoreModel):
 		cwd2 = join_norm(self.local_directory, self.modelname)
 
 		# Ensuring R Exe path is in env.
-		os.environ['path'] = join_norm(self.config['r_executable'])+';'+os.environ['path']
+		# os.environ['path'] = join_norm(self.config['r_executable'])+';'+os.environ['path']
 
 		# Ensure that R paths are set correctly.
 		r_lib = self.config['r_library_path']
