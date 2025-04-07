@@ -36,6 +36,7 @@ dependencies:
 - sqlalchemy
 - statsmodels
 - packaging
+- anywidget
 - pip:
     - emat>=0.6
 
