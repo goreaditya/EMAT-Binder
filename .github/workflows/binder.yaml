@@ -15,8 +15,8 @@ jobs:
     - name: checkout files in repo
       uses: actions/checkout@main
 
-    - name: update jupyter dependencies with repo2docker
-      uses: machine-learning-apps/repo2docker-action@master
+    - name: Load EMAT docker
+      uses: goreaditya/emat@v0.5.3
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
