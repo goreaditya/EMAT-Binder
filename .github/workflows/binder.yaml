@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@main
 
     - name: Load EMAT docker
-      uses: goreaditya/emat@v0.5.3
+      uses: jupyterhub/repo2docker-action@master
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
